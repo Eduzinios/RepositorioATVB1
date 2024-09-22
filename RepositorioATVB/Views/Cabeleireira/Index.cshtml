@@ -1,0 +1,11 @@
+﻿@{
+    @model IEnumerable<Cabeleireira>
+
+    <h2>Lista de Cabeleireira</h2>
+    <ul>
+        @foreach (var cabeleireira in Model)
+        {
+            <li>@cabeleireira.Nome - @cabeleireira.Pais</li>
+        }
+    </ul>
+}

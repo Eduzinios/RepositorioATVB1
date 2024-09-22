@@ -1,0 +1,12 @@
+﻿@{
+    @model IEnumerable<Salão>
+
+    <h2>Lista de salões</h2>
+    <ul>
+        @foreach (var salão in Model)
+        {
+            <li>@salão.Nome - @salão.Genero</li>
+        }
+    </ul>
+
+}
